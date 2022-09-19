@@ -37,11 +37,13 @@ public class PessoaController {
         return pessoaDAO.save(p);
     }
 
+    
     @DeleteMapping
     public void Delete(){
 
         pessoaDAO.deleteAll();
     }
+
 
     @PutMapping
     public Pessoa putPessoa(@RequestBody Pessoa p){

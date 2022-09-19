@@ -11,13 +11,16 @@ public class Presenca {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idpresenca;
+    private Long id_presenca;
+
 
     @Column(nullable = false)
-    private Date Data;
+    private Date data;
+
 
     @Column(nullable = false)
-    private Boolean Situacao;
+    private Boolean situacao;
+
 
     @ManyToOne
     @JoinColumn(name = "pessoa.idpessoa")

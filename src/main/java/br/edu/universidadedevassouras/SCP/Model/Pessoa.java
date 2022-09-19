@@ -15,27 +15,38 @@ public class Pessoa {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idpessoa;
 
+
     @Column(nullable = false, unique = true)
     private String CPF;
 
+
     @Column(nullable = false)
-    private String Nome;
+    private String nome;
+
 
     @Column(nullable = false, unique = true)
-    private int Matricula;
+    private int matricula;
+
 
     @Column(nullable = true)
-    private Date Nascimento;
+    private Date nascimento;
+
 
     @Column(nullable = true)
-    private char Genero;
+    private char genero;
+
 
     @Column(nullable = true)
-    private String Foto;
+    private String foto;
+
 
     @Column(nullable = false, unique = true)
     private String username;
 
+
     @Column(nullable = false)
-    private String Senha;
+    private String senha;
 }
+
+
+
